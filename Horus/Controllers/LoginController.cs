@@ -8,5 +8,12 @@ namespace Horus.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login()
+        {
+            return RedirectToAction("index", "home");
+        }
     }
 }
