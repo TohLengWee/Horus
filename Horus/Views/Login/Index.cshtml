@@ -1,6 +1,4 @@
-﻿@model dynamic
-
-@{
+﻿@{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_Layout-BSI.cshtml";
 }
@@ -9,15 +7,15 @@
 
 <div class="container">
     <div class="wrapper">
-        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new {@class = "form-signin"}))
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "form-signin" }))
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary(true)
             <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
             <hr class="colorgraph"><br>
 
-            <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
-            <input type="password" class="form-control" name="Password" placeholder="Password" required="" />
+            <input type="text" class="form-control" id="Username" name="Username" placeholder="Username" required="" autofocus="" />
+            <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required="" />
 
             <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
         }

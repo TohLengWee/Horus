@@ -24,6 +24,9 @@ namespace Horus
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-theme.css",
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/main.css"));
 
             bundles.Add(new StyleBundle("~/Content/login").Include(

@@ -339,3 +339,31 @@ html {
     background-color: rgba(250,250,250,.8);
     z-index: 1;
 }
+
+
+/*-------------------------------*/
+/*            Search results     */
+/*-------------------------------*/
+
+.results tr[visible='false'],
+.no-result {
+    display: none;
+}
+
+.results tr[visible='true'] {
+    display: table-row;
+}
+
+.counter {
+    padding: 8px;
+    color: #ccc;
+}
+
+/*-------------------------------*/
+/*            Fontawesome        */
+/*-------------------------------*/
+
+.fa_custom {
+    margin-left: 2px;
+    color: #0099CC
+}
