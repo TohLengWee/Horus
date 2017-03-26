@@ -7,20 +7,14 @@
 }
 
 <i class="fa fa-user-plus fa_custom fa-2x"></i>
-<div class="form-group pull-right">
-    <input type="text" class="search form-control" placeholder="Who you looking for?">
-</div>
-<span class="counter pull-right"></span>
-<table class="table table-sm table-hover results">
-    <thead class="thead-inverse">
+<table id="playerLists" class="display nowrap table-hover">
+    <thead>
         <tr>
             <th class="col-md-1 col-xs-1">#</th>
             <th class="col-md-3 col-xs-3">Id</th>
             <th class="col-md-5 col-xs-5">Username</th>
-            <th class="col-md-3 col-xs-3">Password</th>
-        </tr>
-        <tr class="warning no-result">
-            <td colspan="4"><i class="fa fa-warning"></i> No result</td>
+            <th class="col-md-2 col-xs-2">Password</th>
+            <th class="col-md-1 col-xs-1">Something</th>
         </tr>
     </thead>
     @foreach (var player in Model)
@@ -30,6 +24,7 @@
             <td>@player.Id</td>
             <td>@player.Username</td>
             <td>@player.Password</td>
+            <td>helloworldhelloworld</td>
         </tr>
         count++;
     }

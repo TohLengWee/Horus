@@ -22,6 +22,16 @@ namespace Horus
             bundles.Add(new ScriptBundle("~/Scripts/main").Include(
                 "~/Scripts/main.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/datatablesjs").Include(
+                "~/Scripts/DataTables/jquery.dataTables.min.js",
+                "~/Scripts/DataTables/dataTables.rowReorder.min.js",
+                "~/Scripts/DataTables/dataTables.responsive..min.js"));
+
+            bundles.Add(new StyleBundle("~/bundles/datatablescss").Include(
+                "~/Content/DataTables/css/jquery.dataTables.min.css",
+                "~/Content/DataTables/css/rowReorder.dataTables.min.css",
+                "~/Content/DataTables/css/responsive.dataTables.min.css"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/bootstrap-theme.css",

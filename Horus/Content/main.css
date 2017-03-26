@@ -367,3 +367,7 @@ html {
     margin-left: 2px;
     color: #0099CC
 }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #ffff99;
+}
